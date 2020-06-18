@@ -1,0 +1,16 @@
+function largestOfFour(arr) {
+  let results = [];
+  for (let i = 0; i < arr.length; i++) {
+    let high = arr[i][0] ;
+    for (let k = 0; k < arr.length; k++) {
+	    if (arr[i][k] > high) {
+		    high = arr[i][k];
+      }
+    }
+    results[i] = high;
+  }
+  return results;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+//find the largest number in each of the nested arrays
