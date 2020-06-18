@@ -1,0 +1,11 @@
+function confirmEnding(str, target) {
+  str = str.slice(str.length - target.length);
+  if (str === target){
+    return true;
+  } else {
+        return false;
+  }
+}
+
+confirmEnding("Bastian", "n");
+//is the "target" present at the end of the str?
