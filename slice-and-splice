@@ -1,0 +1,11 @@
+function frankenSplice(arr1, arr2, n) {
+   let results = arr2.slice(0);
+   for (let i=0; i < arr1.length; i++) {
+     results.splice(n, 0, arr1[i]);
+     n++;
+   }
+    return results;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+//add the elements of the first array (in order) to the second array based on the given index (n)
